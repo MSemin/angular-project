@@ -1,0 +1,18 @@
+<mat-accordion>
+    <div *ngFor="let order of orders">
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Order number {{ order.id }} placed by {{ order.user }}
+            </mat-panel-title>
+            <mat-panel-description>
+                Click to {{panelOpenState ? 'close' : 'show'}} details
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        
+        User {{ order.user }} bought {{ order.number }} {{ order.product }} for a total of {{ order.total }}€
+        
+    </mat-expansion-panel>
+    </div>
+</mat-accordion>

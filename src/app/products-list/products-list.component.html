@@ -1,0 +1,18 @@
+<mat-accordion>
+    <div *ngFor="let product of products">
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{ product.productName }}
+            </mat-panel-title>
+            <mat-panel-description>
+                Click to {{panelOpenState ? 'close' : 'show'}} details
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        
+        Category : {{ product.productCategory }} - Price : {{ product.price }}€
+        
+    </mat-expansion-panel>
+    </div>
+</mat-accordion>

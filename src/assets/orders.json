@@ -1,0 +1,18 @@
+{
+	"orders": [
+      {
+        "id": "#1",
+        "product": "Espresso Machine",
+        "user": "Mathieu Semin",
+		    "number": "1",
+        "total" : "300.00"
+      },
+      {
+        "id": "#2",
+        "product": "Chocolate Bar",
+        "user": "Eva Luvisutto",
+		    "number": "4",
+        "total": "12.00"
+      }
+    ]
+}

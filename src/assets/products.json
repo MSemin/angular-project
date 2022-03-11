@@ -1,0 +1,16 @@
+{
+	"products": [
+      {
+        "id": "#1",
+        "productName": "Chocolate Bar",
+        "productCategory": "Food",
+		    "price": "3.00"
+      },
+      {
+        "id": "#2",
+        "productName": "Espresso Machine",
+        "productCategory": "Home Appliance",
+		    "price": "300.00"
+      }
+    ]
+}

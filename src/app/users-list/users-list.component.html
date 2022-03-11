@@ -1,0 +1,18 @@
+<mat-accordion>
+    <div *ngFor="let user of users">
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{ user.firstName }} {{ user.lastName }}
+            </mat-panel-title>
+            <mat-panel-description>
+                Click to {{panelOpenState ? 'close' : 'show'}} details
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        
+        Registration Date : {{ user.registrationDate }}
+        
+    </mat-expansion-panel>
+    </div>
+</mat-accordion>
